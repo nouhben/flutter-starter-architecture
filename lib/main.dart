@@ -1,10 +1,13 @@
 import 'package:chatt_squad/models/my_theme_provider.dart';
 import 'package:chatt_squad/screens/loading.dart';
 import 'package:chatt_squad/shared/theme.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
 

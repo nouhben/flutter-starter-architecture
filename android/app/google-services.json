@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "832592804885",
+    "firebase_url": "https://chatt-squad.firebaseio.com",
+    "project_id": "chatt-squad",
+    "storage_bucket": "chatt-squad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832592804885:android:c4ceab88e3af483962a21c",
+        "android_client_info": {
+          "package_name": "com.nouhben.chatt_squad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "832592804885-4ariku830nt3dccpj8ikh3oo2rj0dv89.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzn05UodN_zB1YXrhMa9fEe6vsoeZlVYw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "832592804885-4ariku830nt3dccpj8ikh3oo2rj0dv89.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
