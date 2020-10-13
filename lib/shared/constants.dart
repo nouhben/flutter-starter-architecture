@@ -1,3 +1,4 @@
+import 'package:chatt_squad/shared/size_config.dart';
 import 'package:flutter/material.dart';
 
 // Colors
@@ -20,3 +21,44 @@ const kTitleTextLightColor = Color(0xFF101112);
 const kTitleTextDarkColor = Colors.white;
 
 const kShadowColor = Color(0xFF364564);
+
+const Duration kAnimationDuration = Duration(milliseconds: 200);
+const kPrimaryGradientColor = LinearGradient(
+  begin: Alignment.topLeft,
+  end: Alignment.bottomRight,
+  colors: [
+    Color(0xffFFA53E),
+    Color(0xffFF7643),
+  ],
+);
+
+//FORM ERRORs
+final RegExp emailValidatorRegExp =
+    RegExp(r"^[a-zA-Z0-9.-_]+@[a-zA-Z0-9]+\.[a-zA-Z]+");
+const String kEmailNullError = "Please Enter your email";
+const String kInvalidEmailError = "Please Enter Valid email";
+const String kPassNullError = "Please Enter your password";
+const String kshortPassError = "Password too short";
+const String kMatchPassError = "Passwords do not match";
+const String kNameNullError = "Please Enter your full name";
+const String kInvalidNameError = "Please Enter Valid name";
+const String kshortNameError = "Name too short";
+
+//INPUTS
+final TextStyle kHeadingStyle = TextStyle(
+  color: Colors.black,
+  fontWeight: FontWeight.bold,
+  fontSize: getProportionateScreenWidth(28),
+);
+final InputDecoration kOtpInputDecoration = InputDecoration(
+  contentPadding: EdgeInsets.symmetric(
+    vertical: getProportionateScreenWidth(15),
+  ),
+  enabledBorder: _outlineInputBorder(),
+  focusedBorder: _outlineInputBorder(),
+  border: _outlineInputBorder(),
+);
+OutlineInputBorder _outlineInputBorder() => OutlineInputBorder(
+      borderRadius: BorderRadius.circular(15),
+      borderSide: BorderSide(color: kPrimaryColor),
+    );
